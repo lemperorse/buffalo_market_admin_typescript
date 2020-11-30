@@ -23,10 +23,10 @@
                             Email
                         </label>
                         <div class="relative flex w-full flex-wrap items-stretch mb-3">
-                            <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
+                            <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="far fa-envelope text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุ Email " :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
                         </div>
 
                     </div>
@@ -38,10 +38,10 @@
                             Facebook
                         </label>
                         <div class="relative flex w-full flex-wrap items-stretch mb-3">
-                            <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
+                            <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fab fa-facebook text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุ Facebook " :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
                         </div>
 
                     </div>
@@ -53,10 +53,10 @@
                             Line
                         </label>
                         <div class="relative flex w-full flex-wrap items-stretch mb-3">
-                            <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
+                            <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fab fa-line text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุ Line ID " :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
                         </div>
 
                     </div>

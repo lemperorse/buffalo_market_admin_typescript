@@ -20,10 +20,10 @@
                             รหัสผ่านใหม่
                         </label>
                         <div class="relative flex w-full flex-wrap items-stretch mb-3">
-                            <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
+                            <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-key text-lg text-gray-500"></i>
                             </span>
-                            <input type="password" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
+                            <input type="password" placeholder="โปรดระบุรหัสผ่านใหม่" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
                         </div>
 
                     </div>
@@ -34,10 +34,10 @@
                             ยืนยันรหัสผ่าน
                         </label>
                         <div class="relative flex w-full flex-wrap items-stretch mb-3">
-                            <span class="z-10 mt-2 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
+                            <span class="z-10 mt-1 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-key text-lg text-gray-500"></i>
                             </span>
-                            <input type="password" :class="$xinput" value="" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
+                            <input type="password" placeholder="โปรดระบุรหัสผ่านใหม่" :class="$xinput" value="" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
             </h6>
             <div class="w-full lg:w-6/12 px-4">
                 <div class="relative w-full mb-3"> 
-                    <button @click="disableUser" class="mt-2 text-xs rounded p-3 bg-red-500 hover:bg-red-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                    <button @click="disableUser" class="mt-1 text-xs rounded p-3 bg-red-500 hover:bg-red-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
                         <div class="text-white"><i class="fas fa-eraser"></i> ลบข้อมูลเกษตกร</div>
                     </button>
                 </div>

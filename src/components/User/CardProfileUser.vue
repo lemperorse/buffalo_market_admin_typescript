@@ -5,18 +5,21 @@
             <div class="w-full px-4 flex justify-center">
                 <div class="relative">
                     <img ref="profileImage" alt="..." src="https://sv1.picz.in.th/images/2020/11/04/bQMzml.jpg" class="shadow-xl h-40 w-40 rounded-full align-middle border-none -mt-16 w-48 h-48" />
-                    <div class="flex justify-center mt-4" >
+                    <div class="flex justify-center mt-4">
                         <input type="file" ref="profile" @change="profileChange" style="display:none;" />
 
-                        <button class="bg-green-500 f-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                            อัพโหลดรูปภาพ
+                        <!-- <button class="rounded p-3 bg-green-500 hover:bg-green-800 hover:shadow-lg-lg focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                            <div class="text-white"><i class="fas fa-cloud-upload-alt text-lg"></i> อัพโหลดรูปภาพ</div>
+                        </button> -->
+                        <button class="rounded p-3 bg-green-500 hover:bg-green-800 hover:shadow-lg-lg focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                            <div class="text-white"><i class="fas fa-cloud-upload-alt text-lg"></i> อัพโหลดรูปภาพ</div>
                         </button>
 
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-12" > 
+        <div class="text-center mt-12">
             <div class="text-lg leading-normal mt-0 mb-2 text-gray-500 font-bold  ">
                 <i class="fas fa-user mr-2 text-lg text-gray-500"></i>
                 first_name &nbsp; last_name

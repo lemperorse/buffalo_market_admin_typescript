@@ -21,7 +21,7 @@
                     <span class="z-10 m-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                         <i class="fas fa-thumbtack text-lg text-gray-500"></i>
                     </span>
-                    <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
+                    <input type="text" placeholder="โปรดระบุพิกัดละติจูด" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
                     <span class="z-10 m-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                         <i class="fas fa-thumbtack text-lg text-gray-500"></i>
                     </span>
-                    <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
+                    <input type="text" placeholder="โปรดระบุพิกัดลองจิจูด" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
                 </div>
             </div>
         </div>

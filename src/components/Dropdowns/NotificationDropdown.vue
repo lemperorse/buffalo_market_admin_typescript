@@ -1,7 +1,7 @@
 <template>
 <div>
     <a class="text-gray-600 block py-1 px-3" ref="btnDropdownRef" @click="$router.go(-1)">
-        <i class="fas fa-chevron-circle-left text-3xl"></i>
+        <i class="fas fa-chevron-circle-left text-3xl text-white"></i>
     </a>
     <div ref="popoverDropdownRef" class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48" v-bind:class="{
         hidden: !dropdownPopoverShow,

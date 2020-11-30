@@ -23,10 +23,10 @@
                             ชื่อผู้ใช้งาน
                         </label>
                         <div class="relative flex w-full flex-wrap items-stretch mb-3">
-                            <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
+                            <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-user text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุชื่อผู้ใช้งาน" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
                         </div>
 
                     </div>
@@ -37,10 +37,10 @@
                             ชื่อ
                         </label>
                         <div class="relative flex w-full flex-wrap items-stretch mb-3">
-                            <span class="z-10 mt-2 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
+                            <span class="z-10 mt-1 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="far fa-address-card text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" value="นายแดง" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุชื่อ" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -51,10 +51,10 @@
                             นามสกุล
                         </label>
                         <div class="relative flex w-full flex-wrap items-stretch mb-3">
-                            <span class="z-10 mt-2 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
+                            <span class="z-10 mt-1 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="far fa-address-card text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" value="มีโชค" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุนามสกุล" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -62,13 +62,13 @@
                 <div class="w-full lg:w-6/12  px-4">
                     <div class="relative w-full mb-3">
                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2">
-                            เบอร์โทร
+                            เบอร์โทรศัพท์
                         </label>
                         <div class="relative flex w-full flex-wrap items-stretch mb-3">
-                            <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
+                            <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-mobile-alt text-lg text-gray-500"></i>
                             </span>
-                            <input type="number" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
+                            <input type="number" placeholder="โปรดระบุหมายเลขโทรศัพท์" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -79,10 +79,10 @@
                             Email
                         </label>
                         <div class="relative flex w-full flex-wrap items-stretch mb-3">
-                            <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
+                            <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="far fa-envelope text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุ Email" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
