@@ -5,7 +5,7 @@
             <div class="relative w-full md:px-4 xl:px-4 max-w-full flex-grow flex-1">
                 <h3 class="font-semibold text-base text-gray-800">
                     ตารางจัดการข้อมูลผู้ดูแลระบบ
-                </h3>
+                </h3>    
             </div>
 
             <!-- ค้นหา -->
