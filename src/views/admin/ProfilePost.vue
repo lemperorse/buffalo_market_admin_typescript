@@ -1,5 +1,5 @@
 <template>
-  <div class="relative md:pt-32 pb-32 pt-12 mt-24">
+  <div class="relative pb-32 md:pt-12 mt-20">
     <div class="flex flex-wrap-reverse ">
       <div class="w-full lg:w-12/12 px-4">
         <CardSettingPost />

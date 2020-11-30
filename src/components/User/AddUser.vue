@@ -1,13 +1,5 @@
 <template>
-<div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white border-0">
-    <div class="rounded-t bg-white mb-0 px-6 py-6">
-        <div class="text-center flex justify-between">
-            <h6 class="text-gray-800 text-xl font-bold">เพิ่มผู้ใช้</h6>
-            <button @click="$router.go(-1)" class="ma-2 text-white py-2 px-4 rounded ring-4 ring-red-500 ring-opacity-50 transition duration-500 ease-in-out bg-red-500 hover:bg-red-800 transform hover:-translate-y-1 hover:scale-110" type="button">
-                <i class="fas fa-arrow-left text-lg"></i> กลับ
-            </button>
-        </div>
-    </div>
+<div>
     <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
         <form>
             <div class="flex flex-wrap">
@@ -20,10 +12,10 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-user text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
+                    </div> 
 
-                    </div>
                 </div>
                 <div class="w-full  lg:w-6/12 px-4">
                     <div class="relative w-full mb-3">
@@ -34,7 +26,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-key text-lg text-gray-500"></i>
                             </span>
-                            <input type="password" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="password" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
 
                     </div>
@@ -48,7 +40,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-key text-lg text-gray-500"></i>
                             </span>
-                            <input type="password" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="password" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -68,7 +60,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-user text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
 
                     </div>
@@ -82,7 +74,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-user text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
 
                     </div>
@@ -96,7 +88,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-map-marked-alt text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -109,7 +101,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-map-pin text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -122,7 +114,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-map-pin text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -135,7 +127,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-map-pin text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -148,22 +140,21 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-route text-lg text-gray-500"></i>
                             </span>
-                            <input type="number" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="number" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="flex justify-center mt-6">
-                <button class="ma-2 text-white py-2 px-4 rounded ring-4 ring-green-500 ring-opacity-50 transition duration-500 ease-in-out bg-green-500 hover:bg-green-800 transform hover:-translate-y-1 hover:scale-110" type="submit">
-                    <i class="fas fa-save text-lg"></i> บันทึกข้อมูล
+                <button class="rounded p-3 bg-green-500 hover:bg-green-800 hover:shadow-lg-lg focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                    <div class="text-white"><i class="fas fa-save text-lg"></i> บันทึกข้อมูล</div>
                 </button>
             </div>
 
         </form>
 
     </div>
-
 </div>
 </template>
 
@@ -173,10 +164,9 @@ import {
     Vue,
     Watch,
 } from 'vue-property-decorator';
-import AddUser from "@/components/User/AddUser.vue"
 import moment from "moment";
 @Component({
-    components: { AddUser },
+    components: {},
     computed: {},
 
 })

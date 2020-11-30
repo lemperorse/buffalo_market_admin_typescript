@@ -23,8 +23,8 @@
             </div>
 
             <div class="flex justify-center mt-12">
-                <button class="bg-green-500 f-white active:bg-green-600 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="submit">
-                    <i class="fas fa-save text-lg"></i> บันทึกข้อมูล
+                <button class="rounded p-3 bg-green-500 hover:bg-green-800 hover:shadow-lg-lg focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                    <div class="text-white"><i class="fas fa-save text-lg"></i> บันทึกข้อมูล</div>
                 </button>
             </div>
 

@@ -1,5 +1,5 @@
 <template>
-<div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded" :class="[color === 'light' ? 'bg-white' : 'bg-green-900 text-white']">
+<div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded border-t-4 border-blue-500 " :class="[color === 'light' ? 'bg-white' : 'bg-green-900 text-white']">
     <div class="rounded-t mb-0 px-4 py-3 border-0">
         <div class="flex flex-wrap items-center">
             <div class="relative w-full md:px-4 xl:px-4 max-w-full flex-grow flex-1">
@@ -9,13 +9,18 @@
             </div>
 
             <!-- ค้นหา -->
-            <div class="relative flex flex-wrap ">
-                <input type="text" placeholder="ค้นหา" class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-10" />
-                <span class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
-                    <i class="fas fa-search"></i>
-                </span>
+            <div class="relative flex flex-wrap m-1">
+                <div class="flex rounded border bg-gray-200 bg-white">
+                    <input class="w-full rounded bg-gray-100 m-1 border-2" type="text" placeholder="ค้นหา">
+                    <button>
+                        <span class="w-auto flex rounded justify-end items-center text-grey p-2 ">
+                            <i class="fas fa-search text-xl"></i>
+                        </span>
+                    </button>
+                </div>
             </div>
-            <div class="relative">
+            
+            <div class="relative m-1">
                 <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
                     <option>ประกาศซื้อ</option>
                     <option>ประกาศขาย</option>
@@ -25,9 +30,9 @@
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
                 </div>
             </div>
-            <div class="relative flex flex-wrap ">
-                <button  class="ma-2 bg-blue-600 text-white py-2 px-4 rounded">
-                    <i class="fas fa-search"></i> ค้นหา
+            <div class="relative flex flex-wrap m-1"> 
+                <button class="rounded p-3 bg-blue-500 hover:bg-blue-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                    <div class="text-white"><i class="fas fa-search"></i> ค้นหา</div>
                 </button>
             </div>
 
@@ -109,14 +114,14 @@
                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
                         ประกาศขาย
                     </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
-                        <div class="flex items-center">
-                            <button @click="$router.push('/admin/profilepost')" class="bg-green-500 f-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                                รายละเอียด
+                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"> 
+                        <div class="flex items-center"> 
+                            <button @click="$router.push('/admin/profilepost')" class="m-1 text-xs rounded p-3 bg-green-500 hover:bg-green-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                                <div class="text-white"><i class="far fa-eye"></i> รายละเอียด</div>
                             </button>
-                            <button class="bg-red-500 f-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                                ลบ
-                            </button>
+                            <button class="m-1 text-xs rounded p-3 bg-red-500 hover:bg-red-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                                <div class="text-white"><i class="fas fa-eraser"></i> ลบ</div>
+                            </button> 
                         </div>
                     </td>
                 </tr>
@@ -141,13 +146,13 @@
                         ประกาศซื้อ
                     </td>
                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
-                        <div class="flex items-center">
-                            <button @click="$router.push('/admin/profilepost')" class="bg-green-500 f-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                                รายละเอียด
+                        <div class="flex items-center"> 
+                            <button @click="$router.push('/admin/profilepost')" class="m-1 text-xs rounded p-3 bg-green-500 hover:bg-green-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                                <div class="text-white"><i class="far fa-eye"></i> รายละเอียด</div>
                             </button>
-                            <button class="bg-red-500 f-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                                ลบ
-                            </button>
+                            <button class="m-1 text-xs rounded p-3 bg-red-500 hover:bg-red-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                                <div class="text-white"><i class="fas fa-eraser"></i> ลบ</div>
+                            </button> 
                         </div>
                     </td>
 
@@ -214,23 +219,22 @@
 </div>
 </template>
 
-<script> 
-export default {
-    data() {
-        return { 
-        };
-    },
-    components: {},
-    props: {
-        color: {
-            default: "light",
-            validator: function (value) {
-                // The value must match one of these strings
-                return ["light", "dark"].indexOf(value) !== -1;
-            },
-        },
-    },
-};
+<script>
+ export default {
+     data() {
+         return {};
+     },
+     components: {},
+     props: {
+         color: {
+             default: "light",
+             validator: function (value) {
+                 // The value must match one of these strings
+                 return ["light", "dark"].indexOf(value) !== -1;
+             },
+         },
+     },
+ };
 </script>
 
 <style>

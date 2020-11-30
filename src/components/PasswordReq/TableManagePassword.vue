@@ -1,15 +1,5 @@
 <template>
-<div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded" :class="[color === 'light' ? 'bg-white' : 'bg-green-900 text-white']">
-    <div class="rounded-t mb-0 px-4 py-3 border-0">
-        <div class="flex flex-wrap items-center">
-            <div class="relative w-full md:px-4 xl:px-4 max-w-full flex-grow flex-1">
-                <h3 class="font-semibold text-base text-gray-800">
-                    ตารางจัดการรหัสผ่าน
-                </h3>
-            </div> 
-        </div>
-    </div>
-    <!-- table -->
+<div>
     <div class="block w-full overflow-x-auto">
         <table class="items-center w-full bg-transparent border-collapse">
             <thead>
@@ -19,7 +9,7 @@
                   ? 'bg-gray-100 text-gray-600 border-gray-200'
                   : 'bg-green-800 text-green-300 border-green-700',
               ]">
-                         เลขบัตรประชาชน
+                        เลขบัตรประชาชน
                     </th>
                     <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left" :class="[
                 color === 'light'
@@ -47,8 +37,8 @@
                   ? 'bg-gray-100 text-gray-600 border-gray-200'
                   : 'bg-green-800 text-green-300 border-green-700',
               ]">
-                         จัดการผู้ใช้
-                    </th> 
+                        จัดการผู้ใช้
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -64,14 +54,14 @@
                     </td>
                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
                         เชียงราย
-                    </td>  
+                    </td>
                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
                         <div class="flex items-center">
-                            <button @click="$router.push('/admin/profileuser')" class="bg-green-500 f-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                                รายละเอียด
+                            <button @click="$router.push('/admin/profileuser')" class="m-1 text-xs rounded p-3 bg-green-500 hover:bg-green-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                                <div class="text-white"><i class="far fa-eye"></i> รายละเอียด</div>
                             </button>
-                            <button class="bg-red-500 f-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                                ลบ
+                            <button class="m-1 text-xs rounded p-3 bg-red-500 hover:bg-red-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                                <div class="text-white"><i class="fas fa-eraser"></i> ลบ</div>
                             </button>
                         </div>
                     </td>
@@ -88,19 +78,19 @@
                     </td>
                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
                         พะเยา
-                    </td>  
+                    </td>
                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
                         <div class="flex items-center">
-                            <button @click="$router.push('/admin/profileuser')" class="bg-green-500 f-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                                รายละเอียด
+                            <button @click="$router.push('/admin/profileuser')" class="m-1 text-xs rounded p-3 bg-green-500 hover:bg-green-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                                <div class="text-white"><i class="far fa-eye"></i> รายละเอียด</div>
                             </button>
-                            <button class="bg-red-500 f-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                                ลบ
+                            <button class="m-1 text-xs rounded p-3 bg-red-500 hover:bg-red-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                                <div class="text-white"><i class="fas fa-eraser"></i> ลบ</div>
                             </button>
                         </div>
                     </td>
                 </tr>
- 
+
             </tbody>
         </table>
     </div>
@@ -163,23 +153,22 @@
 </div>
 </template>
 
-<script> 
-export default {
-    data() {
-        return { 
-        };
-    },
-    components: {},
-    props: {
-        color: {
-            default: "light",
-            validator: function (value) {
-                // The value must match one of these strings
-                return ["light", "dark"].indexOf(value) !== -1;
-            },
-        },
-    },
-};
+<script>
+ export default {
+     data() {
+         return {};
+     },
+     components: {},
+     props: {
+         color: {
+             default: "light",
+             validator: function (value) {
+                 // The value must match one of these strings
+                 return ["light", "dark"].indexOf(value) !== -1;
+             },
+         },
+     },
+ };
 </script>
 
 <style>

@@ -3,8 +3,8 @@
     <div class="rounded-t bg-white mb-0 px-6 py-6">
         <div class="text-center flex justify-between">
             <h6 class="text-gray-800 text-xl font-bold">ข้อมูลทั่วไป(ผู้ดูแลระบบ)</h6>
-            <button class="bg-orange-500 f-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
-                <i class="fas fa-pencil-alt text-lg"></i> แก้ไข
+            <button class="rounded p-3 bg-yellow-500 hover:bg-yellow-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-yellow-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">
+                <div class="text-white"><i class="fas fa-pencil-alt text-lg"></i> แก้ไข</div>
             </button>
             <!-- <button class="bg-red-500 f-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
                 <i class="fas fa-pencil-alt text-lg"></i> ยกเลิกการแก้ไข
@@ -26,7 +26,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-user text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
 
                     </div>
@@ -40,7 +40,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="far fa-address-card text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" value="นายแดง" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="text" :class="$xinput" value="นายแดง" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="far fa-address-card text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" value="มีโชค" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="text" :class="$xinput" value="มีโชค" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-mobile-alt text-lg text-gray-500"></i>
                             </span>
-                            <input type="number" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="number" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                             <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="far fa-envelope text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                            <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                         </div>
                     </div>
                 </div>
@@ -91,8 +91,8 @@
             </div>
 
             <div class="flex justify-center mt-6">
-                <button class="bg-green-500 f-white active:bg-green-600 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="submit">
-                    <i class="fas fa-save text-lg"></i> บันทึกข้อมูล
+                <button class="rounded p-3 bg-green-500 hover:bg-green-800 hover:shadow-lg-lg focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                    <div class="text-white"><i class="fas fa-save text-lg"></i> บันทึกข้อมูล</div>
                 </button>
             </div>
 

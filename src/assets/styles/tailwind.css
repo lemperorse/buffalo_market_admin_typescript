@@ -2072,7 +2072,7 @@ video {
   margin-left: 0.25rem;
 }
 
-.mt-2 {
+.m-1 {
   margin-top: 0.5rem;
 }
 
@@ -2156,11 +2156,11 @@ video {
   margin-top: 4rem;
 }
 
-.mt-20 {
+.m-10 {
   margin-top: 5rem;
 }
 
-.mt-24 {
+.mt-20 {
   margin-top: 6rem;
 }
 
@@ -2188,7 +2188,7 @@ video {
   margin-left: -1rem;
 }
 
-.-mt-20 {
+.-m-10 {
   margin-top: -5rem;
 }
 
@@ -2196,7 +2196,7 @@ video {
   margin-left: -5rem;
 }
 
-.-mt-24 {
+.-mt-20 {
   margin-top: -6rem;
 }
 

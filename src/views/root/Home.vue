@@ -31,7 +31,7 @@
 <!--                        </div>-->
                         <div class="mb-6 pt-3 rounded bg-white">
                           <label class="block text-gray-700 text-sm font-bold mb-2 ml-3">ชื่อผู้ใช้</label>
-                          <input v-model="form.username" type="text" class="bg-white rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
+                          <input v-model="form.username" type="text" class="bg-white rounded w-full text-gray-700 focus:outline-none border-t-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
                         </div>
 
 <!--                        <div class="relative w-full mb-3">-->
@@ -40,7 +40,7 @@
 
                         <div class="mb-6 pt-3 rounded bg-white ">
                           <label class="block text-gray-700 text-sm font-bold mb-2 ml-3 ">รหัสผ่าน</label>
-                          <input v-model="form.password" type="password" class="bg-white rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
+                          <input v-model="form.password" type="password" class="bg-white rounded w-full text-gray-700 focus:outline-none border-t-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
                         </div>
 
                         <div class="text-center mt-6">

@@ -15,7 +15,7 @@
             <div class="w-full lg:w-6/12 px-4">
                 <div class="relative w-full mb-3">
                     <button @click="disableUser" class="m-1 text-xs rounded p-3 bg-red-500 hover:bg-red-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
-                        <div class="text-white"><i class="fas fa-eraser"></i> ลบข้อมูลประกาศ</div>
+                        <div class="text-white"><i class="fas fa-eraser"></i> ลบข้อมูลสถานที่</div>
                     </button>
                 </div>
             </div>

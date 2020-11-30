@@ -18,10 +18,10 @@
                     พิกัดฟาร์มตามระบบ GPS (ละติจูด)
                 </label>
                 <div class="relative flex w-full flex-wrap items-stretch mb-3">
-                    <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
+                    <span class="z-10 m-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                         <i class="fas fa-thumbtack text-lg text-gray-500"></i>
                     </span>
-                    <input type="text" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                    <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                 </div>
             </div>
         </div>
@@ -32,17 +32,17 @@
                     พิกัดฟาร์มตามระบบ GPS (ลองจิจูด)
                 </label>
                 <div class="relative flex w-full flex-wrap items-stretch mb-3">
-                    <span class="z-10 mt-2 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
+                    <span class="z-10 m-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                         <i class="fas fa-thumbtack text-lg text-gray-500"></i>
                     </span>
-                    <input type="text" :class="$xinput" class="px-2 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+                    <input type="text" :class="$xinput" class="px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-4 border-green-500 w-full pl-10" />
                 </div>
             </div>
         </div>
 
         <div class="flex justify-center mt-6 mb-6">
-                <button class="bg-green-500 f-white active:bg-green-600 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="submit">
-                    <i class="fas fa-save text-lg"></i> บันทึกข้อมูล
+                <button class="rounded p-3 bg-green-500 hover:bg-green-800 hover:shadow-lg-lg focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
+                    <div class="text-white"><i class="fas fa-save text-lg"></i> บันทึกข้อมูล</div>
                 </button>
             </div>
     </div>

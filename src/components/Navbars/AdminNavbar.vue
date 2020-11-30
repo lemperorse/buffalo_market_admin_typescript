@@ -1,18 +1,25 @@
 <template>
 <!-- Navbar -->
-<nav class="absolute top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-no-wrap md:justify-start flex items-center p-4  text-white bg1 border-yellow-700 border-b-4">
+<nav class="absolute top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-no-wrap md:justify-start flex items-center p-4 text-white relative md:bg-white  md:shadow-lg">
     <div class="w-full mx-autp items-center flex justify-between md:flex-no-wrap flex-wrap md:px-10 px-4">
         <!-- Brand -->
-        <button  @click="$router.go(-1)">
-            <i class="fas fa-chevron-circle-left text-3xl"></i>
-        </button> 
+        <div class="hidden md:flex text-black">
+            <button @click="$router.go(-1)">
+                <i class="fas fa-chevron-circle-left text-3xl"></i>
+            </button>
+        </div>
+
         <!-- Form -->
         <form class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
-            <div class="relative flex w-full flex-wrap items-stretch">
-                <span class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
-                    <i class="fas fa-search"></i>
-                </span>
-                <input type="text" placeholder="Search here..." class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+            <div class="relative flex flex-wrap m-1">
+                <div class="flex rounded border bg-gray-200 bg-white">
+                    <input class="w-full rounded bg-gray-100 m-1 border-2" type="text" placeholder="ค้นหา">
+                    <button>
+                        <span class="w-auto flex rounded justify-end items-center text-black p-2 ">
+                            <i class="fas fa-search text-xl"></i>
+                        </span>
+                    </button>
+                </div>
             </div>
         </form>
         <!-- User -->
@@ -33,8 +40,3 @@ export default {
     },
 };
 </script>
-<style>
-.bg1{
-    background-color : #EF476F;
-}
-</style>
