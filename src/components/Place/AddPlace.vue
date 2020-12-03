@@ -1,10 +1,10 @@
 <template>
 <div>
-    <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
+    <div class="flex-auto px-2 lg:px-10 py-10 pt-0">
         <form>
             <div class="flex flex-wrap">
 
-                <div class="w-full  lg:w-6/12 px-4">
+                <div class="w-full  lg:w-6/12 px-2">
                     <div class="relative w-full mb-3">
                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2">
                             ชื่อสถานที่
@@ -13,13 +13,13 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-home text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" placeholder="โปรดระบุชื่อสถานที่" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุชื่อสถานที่" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
                         </div>
 
                     </div>
                 </div>
 
-                <div class="w-full lg:w-6/12 px-4">
+                <div class="w-full lg:w-6/12 px-2">
                     <div class="relative w-full mb-3">
                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2">
                             ที่อยู่
@@ -28,12 +28,12 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-home text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" placeholder="โปรดระบุที่อยู่" :class="$xinput" value="" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุที่อยู่" :class="$xinput" value="" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
                         </div>
                     </div>
                 </div>
 
-                <div class="w-full lg:w-6/12 px-4">
+                <div class="w-full lg:w-6/12 px-2">
                     <div class="relative w-full mb-3">
                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2">
                             ตำบล
@@ -42,12 +42,12 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-map-pin text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" placeholder="โปรดระบุตำบล" :class="$xinput" value="" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุตำบล" :class="$xinput" value="" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
                         </div>
                     </div>
                 </div>
 
-                <div class="w-full lg:w-6/12  px-4">
+                <div class="w-full lg:w-6/12  px-2">
                     <div class="relative w-full mb-3">
                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2">
                             อำเภอ
@@ -56,12 +56,12 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-map-pin text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" placeholder="โปรดระบุอำเภอ" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุอำเภอ" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
                         </div>
                     </div>
                 </div>
 
-                <div class="w-full lg:w-6/12  px-4">
+                <div class="w-full lg:w-6/12  px-2">
                     <div class="relative w-full mb-3">
                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2">
                             จังหวัด
@@ -70,12 +70,12 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-map-pin text-lg text-gray-500"></i>
                             </span>
-                            <input type="number" placeholder="โปรดระบุจังหวัด" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
+                            <input type="number" placeholder="โปรดระบุจังหวัด" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
                         </div>
                     </div>
                 </div>
 
-                <div class="w-full lg:w-6/12  px-4">
+                <div class="w-full lg:w-6/12  px-2">
                     <div class="relative w-full mb-3">
                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2">
                             รหัสไปรษณีย์
@@ -84,7 +84,7 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-map-marker-alt text-lg text-gray-500"></i>
                             </span>
-                            <input type="number" placeholder="โปรดระบุรหัสไปรษณีย์" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
+                            <input type="number" placeholder="โปรดระบุรหัสไปรษณีย์" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full  lg:w-6/12 px-4">
+                <div class="w-full  lg:w-6/12 px-2">
                     <div class="relative w-full mb-3">
                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2">
                             พิกัด GPS ละติจูด
@@ -111,12 +111,12 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-map-marked-alt text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" placeholder="โปรดระบุพิกัดละติจูด" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุพิกัดละติจูด" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
                         </div>
 
                     </div>
                 </div>
-                <div class="w-full  lg:w-6/12 px-4">
+                <div class="w-full  lg:w-6/12 px-2">
                     <div class="relative w-full mb-3">
                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2">
                             พิกัด GPS ลองจิจูด
@@ -125,7 +125,7 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-map-marked-alt text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" placeholder="โปรดระบุพิกัดลองจิจูด" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10" />
+                            <input type="text" placeholder="โปรดระบุพิกัดลองจิจูด" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
                         </div>
                     </div>
                 </div>

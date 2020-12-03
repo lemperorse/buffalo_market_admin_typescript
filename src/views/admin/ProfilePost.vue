@@ -1,7 +1,7 @@
 <template>
   <div class="relative pb-32 md:pt-12 mt-20">
     <div class="flex flex-wrap-reverse ">
-      <div class="w-full lg:w-12/12 px-4">
+      <div class="w-full lg:w-12/12 px-2">
         <CardSettingPost />
       </div> 
     </div>

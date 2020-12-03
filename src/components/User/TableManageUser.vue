@@ -11,7 +11,7 @@
             <!-- ค้นหา --> 
             <div class="relative flex flex-wrap m-1">
                 <div class="flex rounded border bg-gray-200 bg-white">
-                    <input class="w-full rounded bg-gray-100 m-1 border-2" type="text" placeholder="ค้นหา">
+                    <input class="w-full rounded bg-gray-100 m-1 border-2" type="text" placeholder="ค้นหาผู้ใช้งาน">
                     <button>
                         <span class="w-auto flex rounded justify-end items-center text-grey p-2 ">
                             <i class="fas fa-search text-xl"></i>
@@ -19,10 +19,7 @@
                     </button>
                 </div>
             </div>
-            <div class="relative flex flex-wrap m-1">
-                <!-- <button @click="$router.push('/admin/adduser/')" class="ma-2 text-white py-2 px-4 rounded ring-4 transition duration-500 ease-in-out bg-blue-600 hover:bg-blue-800 transform hover:-translate-y-1 hover:scale-110">
-                    <i class="fas fa-user-plus"></i> เพิ่มผู้ใช้
-                </button>  -->
+            <div class="relative flex flex-wrap m-1"> 
                 <button @click="$router.push('/admin/adduser/')" class="rounded p-3 bg-blue-500 hover:bg-blue-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="submit">
                     <div class="text-white"><i class="fas fa-user-plus"></i> เพิ่มผู้ใช้</div>
                 </button>
