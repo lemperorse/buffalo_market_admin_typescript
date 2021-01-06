@@ -23,7 +23,7 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-address-card text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" placeholder="โปรดระบุชื่อ" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
+                            <input type="text" placeholder="โปรดระบุชื่อ"  class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
                         </div>
 
                     </div>
@@ -37,7 +37,7 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-tags text-lg text-gray-500"></i>
                             </span>
-                            <input type="text" placeholder="โปรดระบุชื่อสินค้า" :class="$xinput" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
+                            <input type="text" placeholder="โปรดระบุชื่อสินค้า"  class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
                         </div>
 
                     </div>
@@ -51,7 +51,7 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-money-bill-wave text-lg text-gray-500"></i>
                             </span>
-                            <input type="number" placeholder="โปรดระบุราคา" :class="$xinput" value="นายแดง" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
+                            <input type="number" placeholder="โปรดระบุราคา"  value="นายแดง" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" />
                         </div>
                     </div>
                 </div> 
@@ -65,15 +65,11 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-tag text-lg text-gray-500"></i>
                             </span>
-                            <select class="block appearance-none w-full bg-white border border-gray-200 text-gray-700 py-3 px-1 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 pl-10" id="grid-state">
+                            <select class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" id="grid-state">
                                 <option>ควาย</option>
                                 <option>อาหารเสริม</option>
                                 <option>ผลิตภัณฑ์จากฟาร์ม</option>
                             </select>
-                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-black">
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,14 +83,14 @@
                             <span class="z-10 mt-1 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-2 py-1 ">
                                 <i class="fas fa-clipboard-list text-lg text-gray-500"></i>
                             </span>
-                            <select class="block appearance-none w-full bg-white border border-gray-200 text-gray-700 py-3 px-1 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 pl-10" id="grid-state">
+                            <select class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" id="grid-state">
                                 <option>ประกาศซื้อ</option>
                                 <option>ประกาศขาย</option>
                             </select>
-                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-black">
+                            <!-- <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-black">
                                 <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -104,7 +100,7 @@
                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2">
                             คำอธิบายสินค้า
                         </label>
-                        <textarea rows="4" class="w-full p-4 text-gray-500 resize-x border rounded-md" placeholder="รายละเอียดต่างๆ"></textarea>
+                        <textarea rows="4" class=" px-2 py-3 text-gray-700 relative bg-gray-100 rounded text-sm  border-t-2 border-purple-500 w-full pl-10 hover:shadow-lg" placeholder="รายละเอียดต่างๆ"></textarea>
                     </div>
                 </div>
 

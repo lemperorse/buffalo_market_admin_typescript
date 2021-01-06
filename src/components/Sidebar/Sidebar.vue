@@ -209,7 +209,7 @@
 
             <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
                 <li class="items-center">
-                    <router-link to="/admin/" v-slot="{ href, route, navigate, isActive }">
+                    <router-link to="/" v-slot="{ href, route, navigate, isActive }">
                         <a :href="href" @click="navigate" class="text-xs uppercase py-3 font-bold block" :class="[
                   isActive
                     ? 'text-yellow-500 hover:text-yellow-600'

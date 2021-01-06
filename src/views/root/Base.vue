@@ -1,20 +1,24 @@
 <template>
   <div> 
+        <router-view />  
   </div>
 </template>
 
 <script lang="ts"> 
+
 import {
   Component,
   Vue,
 } from 'vue-property-decorator'; 
+
 @Component({
-  components: { },
+  components: {  
+    
+    },
     computed: {}
 })
 
-export default class Test extends Vue {
-
+export default class Test extends Vue { 
 
 }
 </script>

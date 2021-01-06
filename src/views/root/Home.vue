@@ -1,91 +1,76 @@
 <template>
-<div class="container mx-auto px-4 h-full">
-    <div class="flex content-center items-center justify-center h-full">
-        <div class="w-full lg:w-4/12 px-4">
-            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-200 border-0">
-                <div class="rounded-t mb-0 px-6 py-6">
-                    <div class="text-center mb-3">
-                        <h6 class="text-gray-600 text-sm font-bold">
-                            Sign in with
-                        </h6>
-                    </div>
-                    <div class="btn-wrapper text-center">
-                        <button class="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150" type="button">
-                            <img alt="..." class="w-5 mr-1" src="" />
-                            Github
-                        </button>
-                        <button class="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150" type="button">
-                            <img alt="..." class="w-5 mr-1" src="" />
-                            Google
-                        </button>
-                    </div>
-                    <hr class="mt-6 border-b-1 border-gray-400" />
-                </div>
-                <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
-                    <div class="text-gray-500 text-center mb-3 font-bold">
-                        <small>Or sign in with credentials</small>
-                    </div>
-                    <form @submit.prevent="login">
-<!--                        <div class="relative w-full mb-3">-->
-<!--                            <v-text-field label="ชื่อผู้ใช้" solo v-model="form.username" required></v-text-field>-->
-<!--                        </div>-->
-                        <div class="mb-6 pt-3 rounded bg-white">
-                          <label class="block text-gray-700 text-sm font-bold mb-2 ml-3">ชื่อผู้ใช้</label>
-                          <input v-model="form.username" type="text" class="bg-white rounded w-full text-gray-700 focus:outline-none border-t-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
+<div>
+    <img :src="wave" class="animate__animated animate__fadeInUp fixed hidden lg:block inset-0 h-full" style="z-index: -1;" />
+    <div class="w-screen h-screen flex flex-col justify-center items-center lg:grid lg:grid-cols-2">
+        <img :src="shop" class=" hidden lg:block w-1/2 hover:scale-150 transition-all duration-500 transform mx-auto " />
+        <form class="flex flex-col justify-center items-center w-1/2">
+            <img :src="avatar" class="w-32 animate__animated animate__fadeInDown" />
+            <div class=" ">
+                <h2 class="animate__animated animate__fadeInRight my-8 font-display font-bold text-2xl text-gray-700 text-center">
+                    ยินดีต้อนรับ
+                </h2>
+                <div class="mt-8">
+                    <!-- <form> -->
+                    <div class="relative animate__animated animate__fadeInRight">
+                        <div class="relative flex w-full flex-wrap items-stretch mb-3 ">
+                            <span class="z-10 h-full leading-snug font-normal absolute text-center text-red-600 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <input type="text" placeholder="ชื่อผู้ใช้งาน" class="px-3 py-3 placeholder-gray-500 rounded bg-red-200  focus:bg-white focus:shadow-outline w-full pl-10" />
                         </div>
-
-<!--                        <div class="relative w-full mb-3">-->
-<!--                            <v-text-field type="password" label="รหัสผ่าน" solo v-model="form.password" required></v-text-field>-->
-<!--                        </div>-->
-
-                        <div class="mb-6 pt-3 rounded bg-white ">
-                          <label class="block text-gray-700 text-sm font-bold mb-2 ml-3 ">รหัสผ่าน</label>
-                          <input v-model="form.password" type="password" class="bg-white rounded w-full text-gray-700 focus:outline-none border-t-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
+                    </div>
+                    <div class="relative mt-6 animate__animated animate__fadeInRight">
+                        <div class="relative flex w-full flex-wrap items-stretch mb-3 ">
+                            <span class="z-10 h-full leading-snug font-normal absolute text-center text-red-600 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                            <input type="password" placeholder="รหัสผ่าน" class="px-3 py-3 placeholder-gray-500 rounded bg-red-200 focus:bg-white focus:shadow-outline w-full pl-10" />
                         </div>
+                        <div class="mt-2">
+                            <a @click="$router.push('/forgot/')" class="text-xs font-display font-semibold text-indigo-600 hover:text-indigo-800
+                                        cursor-pointer">
+                                ลืมรหัสผ่าน
+                            </a>
+                        </div>
+                    </div>
 
-                        <div class="text-center mt-6">
-                            <button :class="$btn" type="submit">
+                    <div class="mt-6">
+                        <!-- <button @click="$router.push('/user/home/')" class="animate__animated animate__slideInUp bg-red-500 text-gray-100 p-4 w-full rounded-full tracking-wide
+                                font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-red-600
+                                shadow-lg">
                                 เข้าสู่ระบบ
+                            </button> -->
+                        <div class="flex justify-center mt-6">
+                            <button @click="$router.push('/admin/')" class="w-full animate__animated animate__slideInUp rounded-full p-3 bg-green-500 hover:bg-green-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" >
+                                <div class="text-white"> เข้าสู่ระบบ</div>
                             </button>
                         </div>
-                    </form>
-                </div>
-
-            </div>
-            <div class="flex flex-wrap mt-6 relative">
-                <div class="w-1/2">
-                    <router-link to="/re-password" class="text-gray-300">
-                        <small>ลืมรหัสผ่าน</small>
-                    </router-link>
-                </div>
-                <div class="w-1/2 text-right">
-                    <router-link to="/register" class="text-gray-300">
-                        <small>สมัครสมาชิก</small>
-                    </router-link>
+                    </div>
+                    <!-- </form> -->
+                    <div class="animate__animated animate__slideInUp mt-6 text-sm font-display font-semibold text-gray-700 text-center">
+                        ยังไม่มีบัญชี ? <a @click="$router.push('/register/')" class="cursor-pointer text-indigo-600 hover:text-indigo-800">สมัครสมาชิก</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-
+        </form>
     </div>
+
 </div>
 </template>
 
-<script lang="ts">
-import {
-    Component,
-    Vue,
-} from 'vue-property-decorator'; 
+<script>
+import wave from "@/assets/login/wave.png";
+import shop from "@/assets/login/undraw_shopping_app_flsj.svg";
+import avatar from "@/assets/login/male_avatar_323b.svg";
 
-@Component({
-    components: {  },
-    computed: {}
-})
-
-export default class Home extends Vue { 
-}
+export default {
+    data() {
+        return {
+            wave,
+            shop,
+            avatar
+        };
+    },
+};
 </script>
-
-<style>
-
-</style>
